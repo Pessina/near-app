@@ -2,6 +2,7 @@ import { Near, connect, keyStores } from "near-api-js";
 
 export default class NearConnection {
   connection: Near | undefined;
+
   config = {
     networkId: "testnet",
     keyStore: new keyStores.BrowserLocalStorageKeyStore(),
