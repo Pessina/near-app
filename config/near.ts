@@ -1,6 +1,6 @@
 import { Near, connect, keyStores } from "near-api-js";
 
-class NearConnection {
+export default class NearConnection {
   connection: Near | undefined;
   config = {
     networkId: "testnet",
@@ -23,7 +23,3 @@ class NearConnection {
     return this.connection;
   }
 }
-
-const nearConnection = new NearConnection();
-
-export default nearConnection;
